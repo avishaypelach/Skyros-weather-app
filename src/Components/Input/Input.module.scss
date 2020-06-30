@@ -1,0 +1,41 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.input,
+.input:focus,
+.input:active {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  border: honeydew;
+  padding: 16px;
+  font-size: 16px;
+  border-radius: 2px;
+  outline: none;
+  margin: 0 10%;
+  width: 60%;
+}
+
+.suggestions_container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 60%;
+  position: absolute;
+  z-index: 1;
+  top: 50px;
+}
+
+.suggestion {
+  color: grey;
+  padding: 7px;
+  width: 100%;
+  text-align: initial;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.16);
+  }
+}
